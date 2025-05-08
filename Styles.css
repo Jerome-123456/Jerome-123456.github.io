@@ -1,0 +1,45 @@
+        .AllClasses {
+             margin: 0;
+             padding: 5px;
+             background-color: #958b59;
+        }
+        .AllClasses > h2, .Class {
+            margin: 10px;
+            padding: 5px;
+            
+        }
+        .Class{
+            background-color: #ded08d;
+        }
+        .Class>  pre, p {
+            margin: 4px;
+            font-size: 14px;
+        }
+
+        * {
+            margin: 0px;
+            font-family: 'Comic Sans MS';
+    
+        }
+
+        input {
+            background-color: #f1e189;
+            border-style: solid;
+            border-width: 2px;
+        }       
+
+        body {
+            border-style: dotted;
+            border-width: 5px;
+            background-color: #534e34;
+        }       
+        header {
+    
+            background-color: #534e34;
+            text-align: center;
+            font-size: 40px;
+        }
+        div {
+        background-color: #f8d630;
+        font-size: 14px;
+        }
