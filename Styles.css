@@ -38,6 +38,7 @@ body {
 
 header {
     background-color: #b31942;
+    
     text-align: center;
     font-size: 40px;
     font-family: Haettenschweiler;
@@ -52,7 +53,10 @@ div {
 nav {
     background-color: #002a5d;
     border-style: solid;
+    border-color: #002a5d;
     border-width: 2px;
+    color: #ffffff;
+    text-align: center
 }
 a{
     color: #ffffff;
