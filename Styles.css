@@ -27,7 +27,9 @@ input {
     background-color: #b31942;
     border-style: solid;
     border-width: 2px;
-    color:#ffffff
+    color:#ffffff;
+    border-color:#ffffff;
+    
 }
 
 body {
