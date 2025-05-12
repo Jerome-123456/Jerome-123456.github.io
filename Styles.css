@@ -71,3 +71,11 @@ h1{
 code{
     color:#ffffff
 }
+button {
+    background-color: #b31942;
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    border-color: #ffffff;
+    font-size: 40px;
+}

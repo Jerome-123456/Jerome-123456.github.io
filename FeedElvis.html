@@ -20,55 +20,24 @@
 
     </nav>
     <section class="AllClasses">
-        <h1><u>USA</u></h1>
-        <article class="Class" style="float: left">
-            <img src="6.png" />
+        <h1><u>Feed Elvis</u></h1>
+        <article class="Class" style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
+            <img src="7.png" id="Elvis" style="display: block; margin-left: auto; margin-right: auto; "/>
         </article>
-
-        <article class="Class" style="float: left">
-            <h2>The United states</h2>
-            <p>Is a country located primarily in North America.</p>
-        </article>
+        <button type="button" onclick="ElvisTransform(1)" style="float:left">Feed Elvis</button>
+        <button type="button" onclick="ElvisTransform(0)" style="float:right">Starve Elvis</button>
     </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <section class="AllClasses">
-        <article class="Class">
-            <p> </p>
-        </article>
+    <script>
+        function ElvisTransform(Form) {
+            var pic;
+            if (Form == 1) { pic = "8.png" }
+            else { pic = "7.png" }
+            document.getElementById('Elvis').src = pic;
+            var snd = new Audio("Song3.mp3");
+            snd.play();
+            snd.currentTime = 0;
 
-        <article class="Class">
-        </article>
-
-        <article class="Class">
-        </article>
-
-        <article class="Class">
-        </article>
-
-        <article class="Class">
-        </article>
-
-        <article class="Class">
-        </article>
-
-
-
-        <article class="Class">
-        </article>
-
-
-
-
-
-    </section>
-
-
+        }
+    </script>
 </body>
 </html>
