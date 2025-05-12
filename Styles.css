@@ -1,50 +1,51 @@
-        .AllClasses {
-             margin: 0;
-             padding: 5px;
-             background-color: #958b59;
-        }
-        .AllClasses > h2, .Class {
-            margin: 10px;
-            padding: 5px;
-            
-        }
-        .Class{
-            background-color: #ded08d;
-        }
-        .Class>  pre, p {
-            margin: 4px;
-            font-size: 14px;
-        }
+.AllClasses {
+    margin: 0;
+    padding: 5px;
+    background-color: #002a5d;
+}
 
-        * {
-            margin: 0px;
-            font-family: 'Comic Sans MS';
-    
-        }
+    .AllClasses > h2, .Class {
+        margin: 10px;
+        padding: 5px;
+    }
 
-        input {
-            background-color: #f1e179;
-            border-style: solid;
-            border-width: 2px;
-        }       
+.Class {
+    background-color: #ffffff;
+}
 
-        body {
-
-            background-color: #534e34;
-        }       
-        header {
-    
-            background-color: #837a4f;
-            text-align: center;
-            font-size: 40px;
-        }
-        div {
-        background-color: #f8d630;
+    .Class > pre, p {
+        margin: 4px;
         font-size: 14px;
-        }
+    }
+
+* {
+    margin: 0px;
+    font-family: 'Comic Sans MS';
+}
+
+input {
+    background-color: #f1e189;
+    border-style: solid;
+    border-width: 2px;
+}
+
+body {
+    background-color: #b31942;
+}
+
+header {
+    background-color: #b31942;
+    text-align: center;
+    font-size: 40px;
+}
+
+div {
+    background-color: #f8d630;
+    font-size: 14px;
+}
+
 nav {
-    background-color: #ded08d;
-    align-self: center;
+    background-color: #002a5d;
     border-style: solid;
     border-width: 2px;
 }
