@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>2.2.1 Programming techniques</title>
+</head>
+<body>
+    <header>2.2.1 Programming techniques</header>
+    <nav>
+        <a href="#">Compression,encryption and hasing </a>     |
+        <a href="#">Boolean algebra</a>     |
+        <a href="#">Primitive data types</a>    |
+        <a href="#">Pathfinding</a>     |
+        <a href="2.2.1 Page.html">Programming techniques</a>     |
+        <a href="MrT.html">Mr Thompson</a>    |
+
+    </nav>
+    <section class="AllClasses">
+        <article class="Class">
+            <p>
+                This section of course is taught by <a href="HTMLPage1.html" style="color:#ffffff">Mr Thompson</a> he's alright I guess.
+                Here is a photo of him.
+            </p>
+            <img src="1.png" alt="Mr Thompson as the queen" width="256" height="384" />
+        </article>
+
+        <article class="Class">
+            <h2><u>Programming constructs</u></h2>
+            <ol>
+                <li> Sequence: Goes in order one line after the other </li>
+                <li> Selection: Will do one or the other based on if one/many condition(s) are met</li>
+                <li> Iteration: Will run the intened code until a condition is met </li>
+            </ol>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+        </article>
+
+        <article class="Class">
+            <h2><u>Sequence</u></h2>
+            <div>
+                <code>
+                    str X = "Hello";
+                    Console.WriteLine(x);
+                </code>
+            </div>
+        </article>
+
+        <article class="Class">
+            <h2><u>Selection</u></h2>
+            <div>
+                <code>
+                    int Y = 10;
+                    if(Y == 10)
+                    {
+                    Console.Writeline("True");
+                    }
+                    else()
+                    {
+                    Console.WriteLine("False");
+                    }
+                </code>
+            </div>
+        </article>
+
+        <article class="Class">
+            <h2><u>Iteration</u></h2>
+            <div>
+                <code>
+                    int Y = 100;
+                    while(i = 0; i != Y; i++)
+                    {
+                    Console.Writeline(i);
+                    }
+
+                </code>
+            </div>
+
+        </article>
+
+        <article class="Class">
+            <h2><u>Global and local variables</u></h2>
+            <p>
+                Global variables are a type of variable that will run the whole time whilst a program is active.
+                These type of variables are useful for variables that will be used thoughtout the whole program.
+
+                Local variables are variables that will not run the whole time during the duration of a program.
+                These are used for function and procedures and will die after they have being be used this saves RAM
+                allowing for the program to run quicker and more efficent
+            </p>
+        </article>
+
+        <article class="Class">
+            <h2><u> Functions and procedures</u></h2>
+            <p>
+                Functions are a type of modular programming these are like procedures but do return a value.
+
+                Procedures are the other type of modular programming these are like functions but don't. return a value
+
+                The benefits of using functions and procedurs is it allows you to use the same piece of code mutiple of times.
+                Without the need of copy and pasting the same thing over and over again which would reduce the file size size
+                of the program
+            </p>
+        </article>
+
+        <article class="Class">
+            <h2><u>Passing by value and passing by reference</u></h2>
+            <p>
+                Passing by value pass the direct value of a variable to a function/procedure
+                Passing by reference pass the location of the variable's value in memory to the function/procedure this allows for
+                the value of entered into the fucntion/procedure to change without having to call it with a diffrent value
+            </p>
+        </article>
+
+        <article class="Class">
+            <h2><u>OOP object oriented programming</u></h2>
+            <p>
+                OOP is an another type of programming like procedual programming. OOP uses objects. Each object has it's own class.
+                The object is simply an instance of the class. The class can contain.
+            </p>
+            <ul>
+                <li>Attributes - Variables</li>
+                <li>Methods - Functions and procedures</li>
+            </ul>
+        </article>
+
+        <script>
+
+            function function1(id) {
+                x = Math.floor(Math.random() * 4);
+                if (x == 0) { y = " sequence ?"; }
+                if (x == 1) { y = " selection ?"; }
+                if (x == 2) { y = " iteration ?"; }
+                if (x == 3) { y = " this HTML page ?"; }
+
+                id.innerHTML = "What is"+y;
+            }
+            function function2(id) {
+                id.innerHTML
+            }
+
+        </script>
+
+        <article class="Class">
+            <form action="4.png">
+                <label for="Awnser" onmouseover="function1(this)">What is selection</label><br />
+                <input type="text" id="Awnser" Awnser="Awnser" /><br />
+                <br />
+                <input type="submit" /><br />
+            </form>
+            <br />
+
+            <audio controls autoplay>
+
+                <source src="Rasputin.mp3" type="audio/mp3" />
+
+            </audio>
+
+        </article>
+
+
+
+
+
+    </section>
+
+
+</body>
+</html>
