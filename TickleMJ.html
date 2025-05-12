@@ -13,27 +13,23 @@
     <nav>
         <a href="index.html">Home </a>     |
         <a href="FeedElvis.html">Feed Elvis</a>     |
-        <a href="TickleMJ.html">Tickle MJ</a>   |
+        <a href="TickleMJ.html">Tickle MJ</a>    |
         <a href="#">Pathfinding</a>     |
         <a href="2.2.1 Page.html">Programming techniques</a>     |
         <a href="MrT.html">Mr Thompson</a>    |
 
     </nav>
     <section class="AllClasses">
-        <h1><u>Feed Elvis</u></h1>
+        <h1><u>Tickle MJ</u></h1>
         <article class="Class" style="display: block; margin-left: auto; margin-right: auto; width: 30%;">
-            <img src="7.png" id="Elvis" style="display: block; margin-left: auto; margin-right: auto; "/>
+            <img src="9.png" id="Elvis" style="display: block; margin-left: auto; margin-right: auto; " />
         </article>
-        <button type="button" onclick="ElvisTransform(1)" style="float:left">Feed Elvis</button>
-        <button type="button" onclick="ElvisTransform(0)" style="float:right">Starve Elvis</button>
+        <button type="button" onclick="TickleMJ()" style="display: block; margin-left: auto; margin-right: auto;">Tickle MJ</button>
     </section>
     <script>
-        function ElvisTransform(Form) {
-            var pic;
-            if (Form == 1) { pic = "8.png" }
-            else { pic = "7.png" }
-            document.getElementById('Elvis').src = pic;
-            var snd = new Audio("Song3.mp3");
+        function TickleMJ() {
+            
+            var snd = new Audio("Song4.mp3");
             snd.play();
             snd.currentTime = 0;
 
