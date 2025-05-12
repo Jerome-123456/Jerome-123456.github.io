@@ -45,7 +45,7 @@ header {
 }
 
 div {
-    background-color: #f8d630;
+    background-color: #b31942;
     font-size: 14px;
 }
 
@@ -63,4 +63,7 @@ h1{
     text-align:center;
     font-size:36px;
     color: #ffffff
+}
+code{
+    color:#ffffff
 }
