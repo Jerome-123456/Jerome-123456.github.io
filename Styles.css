@@ -4,7 +4,7 @@
     margin: auto
 }
 
-    .AllClasses > h2, .Class, .ButtonClass {
+.AllClasses > h2, .Class, .ButtonClass {
         margin-left: 100px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -13,7 +13,7 @@
     }
 
 .Class {
-    background-color: #FF6F61;
+    background-color: #40E0D0;
 }
 
     .Class > pre, p {
@@ -44,7 +44,6 @@ input {
 }
 
 html, body {
-    
     height: 100%;
     background: radial-gradient(circle at center, #FF00FF, /* Magenta */
     #00FFFF, /* Cyan */
@@ -52,6 +51,29 @@ html, body {
     #FF4500, /* Sunset Orange */
     #800080 /* Psychedelic Purple */
     );
+    animation: trippyGradient 1.5s ease infinite;
+}
+
+@keyframes trippyGradient {
+    0% {
+        background: radial-gradient(circle at center, #FF00FF, #00FFFF, #FFFF00, #FF4500, #800080);
+    }
+
+    25% {
+        background: radial-gradient(circle at center, #00FFFF, #FFFF00, #FF4500, #800080, #FF00FF);
+    }
+
+    50% {
+        background: radial-gradient(circle at center, #FFFF00, #FF4500, #800080, #FF00FF, #00FFFF);
+    }
+
+    75% {
+        background: radial-gradient(circle at center, #FF4500, #800080, #FF00FF, #00FFFF, #FFFF00);
+    }
+
+    100% {
+        background: radial-gradient(circle at center, #FF00FF, #00FFFF, #FFFF00, #FF4500, #800080);
+    }
 }
 
 header {
@@ -87,13 +109,14 @@ div {
 }
 .NavBar:hover{
     width: 100px;
+    font-size:12px
     
 }
 .NavBar:hover > a{
     color: #ffffff;
     display:block;
     
-    white-space: nowrap;
+   
     
 }
 
@@ -118,6 +141,33 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+@keyframes wave {
+    100% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+.hippie-text {
+    display: inline-block;
+    animation: wave 0.5s infinite;
+}
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
