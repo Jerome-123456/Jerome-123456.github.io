@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -16,7 +16,7 @@
 </head>
 <body>
     <header> <img src="Logo.png" style="float:left" height="60" width="90" />Big D productions LTD.<img src="Logo.png" style="float:right" height="60" width="90" /></header>
-    
+
     <div class="NavBar">
 
 
@@ -43,30 +43,60 @@
 
     </div>
     <section class="AllClasses">
-        <h1><u>Big D productions LTD.</u></h1>
-        <h1><u><strong>Not a porn website btw</strong></u></h1>
         <article class="Class">
-            <h1>🌼 Welcome to Your Cosmic Journey 🌼</h1>
-            <p>
-                Hey beautiful soul! You’ve just landed in a magical space filled with peace, love, and lots of groovy vibes.
-                This is your homepage — the heart of the universe here, where all the good energy flows. 
-            </p>
-            <ul>
-                <li>A home page with all the info you need (you’re vibing here now!)</li>
-                <li>A soulful summary of Elvis — complete with photos and a live 1973 recording to set your spirit free</li>
-                <li>Feeding Elvis and grooving with other Elvis actions — sounds and GIFs to bring the king to life</li>
-                <li>Tickling MJ — with sounds that’ll make you smile wide</li>
-                <li>A programming techniques revision page — with jazzy JavaScript and a chill form to play with</li>
-                <li>A page celebrating Mr. Thompson and his AI companions — now with smooth music to elevate your mind</li>
-                <li>A heartfelt Drug PSA plus a fun quiz with answers — ’cause knowledge is love</li>
-            </ul>
-            
-        </article>
-        <article class="Class" style="text-align:center">
-            <h2>✉️ All advice & feedback? Please send via carrier pigeon. Thank you, peace & light to you! 🕊️</h2>
+            <form>
+                <label for="Number1">Number 1</label><br />
+                <input type="number" id="Number1" value="Number1" /><br />
+                <label for="Number2">Number 2</label><br />
+                <input type="number" id="Number2" value="Number2" /><br />
+                <label for="Operation">Operation Type + , - , * or /</label><br />
+                <input type="text" id="Operation" value="" /><br />
+               <br /><input type="button" onclick="Calculate()" value="Calculate"/>
+                
+
+            </form>
+            <p id="Result">The Result is:</p>
+            <script>
+                function Calculate() {
+                    var Number1 = document.getElementById("Number1").value;
+                    var Number2 = document.getElementById("Number2").value;
+                    var Operation = document.getElementById("Operation").value;
+
+                    let num1 = Number(Number1);
+                    let num2 = Number(Number2);
+                    
+                    if (Operation == "+") {
+                        var Result = num1 + num2;
+                    }
+                    else if (Operation == "-") {
+                        var Result = num1 - num2;
+                    }
+                    else if (Operation == "*") {
+                        var Result = num1 * num2;
+                    }
+                    else if (Operation == "/") {
+                        var Result = num1 / num2;
+                    }
+                    else {Result = "Error" }
+
+
+                    var ResultText = "The Result is: "+Result
+
+
+                    document.getElementById("Result").innerHTML = ResultText
+                    Result = 0;
+
+
+
+
+
+
+
+                }
+
+            </script>
         </article>
     </section>
-
 
 </body>
 </html>

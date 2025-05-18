@@ -35,7 +35,7 @@
 }
 
 input {
-    background-color: #b31942;
+    background-color: #32CD32;
     border-style: solid;
     border-width: 2px;
     color:#ffffff;
@@ -51,7 +51,7 @@ html, body {
     #FF4500, /* Sunset Orange */
     #800080 /* Psychedelic Purple */
     );
-    animation: trippyGradient 1.5s ease infinite;
+    animation: trippyGradient 1.25s ease infinite;
 }
 
 @keyframes trippyGradient {
@@ -60,19 +60,19 @@ html, body {
     }
 
     25% {
-        background: radial-gradient(circle at center, #00FFFF, #FFFF00, #FF4500, #800080, #FF00FF);
+        background: radial-gradient(circle at center, #800080, #FF00FF, #00FFFF, #FFFF00, #FF4500);
     }
 
     50% {
-        background: radial-gradient(circle at center, #FFFF00, #FF4500, #800080, #FF00FF, #00FFFF);
-    }
-
-    75% {
         background: radial-gradient(circle at center, #FF4500, #800080, #FF00FF, #00FFFF, #FFFF00);
     }
 
+    75% {
+        background: radial-gradient(circle at center, #FFFF00, #FF4500, #800080, #FF00FF, #00FFFF);
+    }
+
     100% {
-        background: radial-gradient(circle at center, #FF00FF, #00FFFF, #FFFF00, #FF4500, #800080);
+        background: radial-gradient(circle at center, #00FFFF, #FFFF00, #FF4500, #800080, #FF00FF);
     }
 }
 
