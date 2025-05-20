@@ -22,7 +22,7 @@ const config = {
 let ball, paddleLeft, paddleRight, cursors, score = 0;
 
 const game = new Phaser.Game(config);
-
+const sound = new Audio('Sounds/S1.mp3');
 function preload() {}
 
 function create() {
@@ -30,15 +30,17 @@ function create() {
     up: Phaser.Input.Keyboard.KeyCodes.W,
     down: Phaser.Input.Keyboard.KeyCodes.S
     });
-    ball = this.physics.add.sprite(400, 300, null).setDisplaySize(15, 15).setTint(0xffffff);
+    ball = this.physics.add.sprite(400, 300, null).setDisplaySize(20, 20).setTint(0xffffff);
  
     // Add rectangle paddles
-    paddleLeft = this.add.rectangle(50, 300, 20, 100, 0xffffff);
+    paddleLeft = this.add.rectangle(50, 300, 20, 100, 0x1F9F5D6);
     paddleRight = this.add.rectangle(750, 300, 20, 100, 0xffffff);
  
     // Enable physics
     this.physics.add.existing(paddleLeft, true);
+    sound.play();
     this.physics.add.existing(paddleRight, true);
+    sound.play();
  
     ball.setVelocity(250, 250);
     ball.setCollideWorldBounds(true);
@@ -51,13 +53,15 @@ function create() {
 }
 
 function update() {
+    
     // Right paddle (Player 1)
-    if (cursors.up.isDown) paddleRight.y -= 5;
-    else if (cursors.down.isDown) paddleRight.y += 5;
+    if (cursors.up.isDown) {paddleRight.y -= 5; sound.play();}
+        
+    else if (cursors.down.isDown){ paddleRight.y += 5; sound.play();}
  
     // Left paddle (Player 2)
-    if (wasd.up.isDown) paddleLeft.y -= 5;
-    else if (wasd.down.isDown) paddleLeft.y += 5;
+    if (wasd.up.isDown) {paddleLeft.y -= 5; sound.play();}
+    else if (wasd.down.isDown){ paddleLeft.y += 5; sound.play();}
  
     paddleLeft.body.updateFromGameObject();
     paddleRight.body.updateFromGameObject();
