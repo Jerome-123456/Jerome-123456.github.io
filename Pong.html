@@ -8,39 +8,35 @@
     
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="LightStyles.css" id="StylesLink"/>
     <link rel="icon" type="image/x-icon" href="Photos/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
 </head>
 <body>
-        <header>Elvis Presley</header>
+    <script>
+            function changemode() {
+                var currentStyle = document.getElementById("StylesLink").getAttribute("href");
+                if (currentStyle === "LightStyles.css") {
+                    document.getElementById("StylesLink").setAttribute("href", "DarkStyles.css");
+                } else
+                    document.getElementById("StylesLink").setAttribute("href", "LightStyles.css");  
+                
+            }
+       </script>
+        <header><button style="float: left;" onclick="changemode()">Change mode</button>[Insert Title Here]</header>
         
         <div class="NavBar">
             <a href="index.html">Home</a><br><br>
-            <a href="AboutElvis.html">About Elvis</a><br><br>
-            <a href="TopHits.html">Top Hits</a><br><br>
-            <a href="PhotoGallery.html">Photo Gallery</a><br><br>
-            <a href="FanClub.html">Fan Club</a><br><br>
-            <a href="QuoteOfTheDay.html">Quote of the Day</a><br><br>
-            <a href="Jukebox.html">Jukebox</a><br><br>
             <a href="Pong.html">Pong</a><br><br>
         </div>
         <section class="AllClasses">
         
-        <article class="Class">
-            <h1>Elvis Pong</h1>
-            <p>
-                Get ready to rock and roll with Elvis in this classic Pong game! Use your paddle to bounce the ball back and forth, all while enjoying the golden vibes of Elvis's world. 
-            </p>
-            <p>
-                Can you keep up with the King? Let's find out!
-            </p>
-            
-        <article>
-            
-                <div id="game-container"></div>
-        </article>
-    </section>
+        
+            <div id="game-container"></div>
+        
+        </section>
     <script src="game.js"></script>
 </body>
 </html>

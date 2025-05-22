@@ -4,47 +4,48 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="LightStyles.css" id="StylesLink" />
     <link rel="icon" type="image/x-icon" href="Photos/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
 
 
 
 
 
-    <title>Elvis Presley - Home</title>
+
+    <title>Home</title>
 </head>
+
 <body>
-       
-    <header>Elvis Presley</header>
+       <script>
+            function changemode() {
+                var currentStyle = document.getElementById("StylesLink").getAttribute("href");
+                if (currentStyle === "LightStyles.css") {
+                    document.getElementById("StylesLink").setAttribute("href", "DarkStyles.css");
+                } else
+                    document.getElementById("StylesLink").setAttribute("href", "LightStyles.css");  
+                
+            }
+       </script>
+
+        <header><button style="float: left;" onclick="changemode()">Change mode</button>[Insert Title Here]</header>
     
     <div class="NavBar">
-        <a href="index.html" onclick="PlaySound()">Home</a><br><br>
-        <a href="AboutElvis.html"onclick="PlaySound()">About Elvis</a><br><br>
-        <a href="TopHits.html"onclick="PlaySound()">Top Hits</a><br><br>
-        <a href="PhotoGallery.html"onclick="PlaySound()">Photo Gallery</a><br><br>
-        <a href="FanClub.html"onclick="PlaySound()">Fan Club</a><br><br>
-        <a href="QuoteOfTheDay.html"onclick="PlaySound()">Quote of the Day</a><br><br>
-        <a href="Jukebox.html"onclick="PlaySound()">Jukebox</a><br><br>
-        <a href="Pong.html"onclick="PlaySound()">Pong</a><br><br>
+        <a href="index.html">Home</a><br><br>
+        <a href="Pong.html">Pong</a><br><br>
     </div>
     <section class="AllClasses">
         
         <article class="Class">
-            <h1>It’s Now or Never – Dive In!</h1>
+            <h1>[Insert Title Here]</h1>
             <p>
-                Welcome to the Elvis Presley Website — where the code is all shook up, the vibes are burnin’ love, and Put on your blue suede shoes and get ready to rock this site!  
+                Welcome to the [Insert Title Here] Website
             </p>
             <ul>
-                <li>About Elvis — A short biography of Elvis, from Tupelo to Graceland, and how he shook up the world with his music and hips.</li>
-                <li>Top Hits [COMING SOON] — A list of Elvis’s greatest hits with fun facts, lyrics, and maybe even sound samples.</li>
-                <li>Photo Gallery [COMING SOON] — Iconic images of Elvis through the years, from the 1950s leather look to his Vegas jumpsuits.</li>
-                <li>Fan Club [COMING SOON] — A fun space to “join” the club (a pretend form), leave a message, or just say “thank you, thank you very much.”.</li>
-                <li>Quote of the Day [COMING SOON] — A randomly rotating Elvis quote or lyric using JavaScript for a bit of interactivity.</li>
-                <li>Jukebox [COMING SOON] — A retro-style music player (or visual) that plays themed sound clips or switches colors like a jukebox light show.</li>
-                <li>Pong [PLAY NOW] — A rock ’n’ roll twist on the classic arcade game! Battle it out Pong-style with a touch of Elvis flair—golden colors, jukebox vibes, and hip-shaking action.</li>
-                <li>More to come! — Stay tuned for more Elvis-themed fun and games!</li>
+                <li>Pong [PLAY NOW] — The classic arcade game!</li>
+                <li>More to come! — Stay tuned for more [Insert Title Here]-themed fun and games!</li>
             </ul>
             
         </article>

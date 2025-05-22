@@ -3,7 +3,7 @@ const config = {
     width: 800,
     height: 600,
     parent: 'game-container',
-    backgroundColor: '#fff',
+    backgroundColor: '#B5C8FA',
     physics: {
         default: 'arcade',
         arcade: {
@@ -30,11 +30,11 @@ function create() {
     up: Phaser.Input.Keyboard.KeyCodes.W,
     down: Phaser.Input.Keyboard.KeyCodes.S
     });
-    ball = this.physics.add.sprite(400, 300, null).setDisplaySize(20, 20).setTint(0xFF3C38);
+    ball = this.physics.add.sprite(400, 300, null).setDisplaySize(20, 20).setTint(0xFFFFFF);
  
     // Add rectangle paddles
-    paddleLeft = this.add.rectangle(50, 300, 20, 150, 0xFF3C38);
-    paddleRight = this.add.rectangle(750, 300, 20, 150, 0xFF3C38);
+    paddleLeft = this.add.rectangle(50, 300, 20, 150, 0xFA8072);
+    paddleRight = this.add.rectangle(750, 300, 20, 150, 0xFA8072);
  
     // Enable physics
     this.physics.add.existing(paddleLeft, true);
