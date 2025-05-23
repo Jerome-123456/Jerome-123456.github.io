@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Pong Game</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.js"></script>
-    
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LightStyles.css" id="StylesLink"/>
+    <link rel="stylesheet" href="LightStyles.css" id="StylesLink" />
     <link rel="icon" type="image/x-icon" href="Photos/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+    <script src="CodeAcademy.js"></script>
 
+
+
+
+
+
+
+    <title>Home</title>
 </head>
+
 <body>
-    <script>
+       <script>
             function changemode() {
                 var currentStyle = document.getElementById("StylesLink").getAttribute("href");
                 if (currentStyle === "LightStyles.css") {
@@ -25,18 +31,14 @@
                 
             }
        </script>
+
         <header><button style="float: left;" onclick="changemode()">Change mode</button>Level Select</header>
-        
-        <div class="NavBar">
-            <a href="index.html">Home</a><br><br>
-            <a href="Pong.html">Pong</a><br><br>
-        </div>
-        <section class="AllClasses">
-        
-        
-            <div id="game-container"></div>
-        
-        </section>
-    <script src="pong.js"></script>
-</body>
+    
+    <div class="NavBar">
+        <a href="index.html">Home</a><br><br>
+        <a href="Pong.html">Pong</a><br><br>
+    </div>
+
+    <div id="game"></div>
+    
 </html>
