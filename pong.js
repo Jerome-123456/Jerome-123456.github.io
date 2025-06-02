@@ -3,7 +3,7 @@ const config = {
     width: 800,
     height: 600,
     parent: 'game-container',
-    backgroundColor: '#B5C8FA',
+    backgroundColor: '#fff',
     physics: {
         default: 'arcade',
         arcade: {
@@ -23,18 +23,21 @@ const sound = new Audio('Sounds/S1.mp3');
 let ball, paddleLeft, paddleRight, cursors, score = 0;
 
 
-function preload() {}
+function preload() {
+    this.load.image('ball', 'Assets/ball.png');
+}
 
 function create() {
     wasd = this.input.keyboard.addKeys({
     up: Phaser.Input.Keyboard.KeyCodes.W,
     down: Phaser.Input.Keyboard.KeyCodes.S
     });
-    ball = this.physics.add.sprite(400, 300, null).setDisplaySize(20, 20).setTint(0xFFFFFF);
+    ball = this.physics.add.sprite(400, 300, 'ball').setDisplaySize(20, 20).setTint(0xFFFFFF);
+    
  
     // Add rectangle paddles
-    paddleLeft = this.add.rectangle(50, 300, 20, 150, 0xFA8072);
-    paddleRight = this.add.rectangle(750, 300, 20, 150, 0xFA8072);
+    paddleLeft = this.add.rectangle(50, 300, 20, 150, 'ball');
+    paddleRight = this.add.rectangle(750, 300, 20, 150, 'ball');
  
     // Enable physics
     this.physics.add.existing(paddleLeft, true);

@@ -59,3 +59,8 @@ header{
     font-size:	0.9375rem;
     
 }
+button{
+    background-color: #333347;
+    color: #f5f5f5;
+    border: none;
+}

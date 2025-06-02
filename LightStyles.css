@@ -58,3 +58,8 @@ header{
     font-size:	0.9375rem;
     
 }
+button{
+    background-color: #FA8072;
+    color: #f5f5f5;
+    border: none;
+}
