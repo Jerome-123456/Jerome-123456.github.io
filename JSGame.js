@@ -23,17 +23,20 @@ let character = 0;
 
 function preload() {
     this.load.image('charecter', 'Assets/character.png');
+    this.load.image('background', 'Assets/Map.png');
 }
 
 function create() {
+    this.add.image(400, 300, 'background').setDisplaySize(800, 600);
     wasd = this.input.keyboard.addKeys({
         up: Phaser.Input.Keyboard.KeyCodes.W,
         down: Phaser.Input.Keyboard.KeyCodes.S,
         left: Phaser.Input.Keyboard.KeyCodes.A,
         right: Phaser.Input.Keyboard.KeyCodes.D,
     });
-    character = this.add.sprite(400, 300, 'charecter').setDisplaySize(50, 50).setTint(0xFFFFFF);
+    character = this.add.sprite(400, 300, 'charecter').setDisplaySize(50, 50).setTint(0xFFFFFF); 
     
+
     
 }
 
@@ -42,7 +45,7 @@ function update() {
         character.y -= 5;
     }
     
-    if (wasd.down.isDown && character.y < 600 ) {
+    if (wasd.down.isDown && character.y < 600) {
         character.y += 5;
     }
     if (wasd.left.isDown && character.x > 0) {
@@ -51,5 +54,5 @@ function update() {
     if (wasd.right.isDown && character.x < 800) {
         character.x += 5;
     }
-    
+
 }
