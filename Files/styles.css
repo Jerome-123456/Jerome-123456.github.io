@@ -47,20 +47,24 @@ header{
     height: 100px;
     position: relative;
     background: #fff;
-    animation: Seizure 0.005s infinite;
     float: left;
     margin-right: 10px;
 }
-@keyframes Seizure {
-  0%   { background-color: #de2828; }  /* Very dark gray */
-  10%  { background-color: #27b30bb0; }
-  20%  { background-color: #470d62; }
-  30%  { background-color: #9be84e; }
-  40%  { background-color: #c1f006; }
-  50%  { background-color: #c39ae2; }
-  60%  { background-color: #fd08d4; }
-  70%  { background-color: #23a350; }
-  80%  { background-color: #f3ef00; }
-  90%  { background-color: #e22353; }
-  100% { background-color: #2a2c49; }  /* White */
-}
+
+.picturebox{
+    background-color:#1b2431;
+    color: #C9D1D9;
+    border-radius: 15px;
+    width:fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */  
+    display: flex;
+    justify-content: center;  /* center content horizontally */
+    align-items: center;      /* center content vertically */
+    
+    
+} 
+
