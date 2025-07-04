@@ -47,20 +47,20 @@ header{
     height: 100px;
     position: relative;
     background: #fff;
-    animation: Seizure 0.05s infinite;
+    animation: Seizure 0.005s infinite;
     float: left;
     margin-right: 10px;
 }
 @keyframes Seizure {
-  0%   { background-color: #1a1a1a; }  /* Very dark gray */
-  10%  { background-color: #333333; }
-  20%  { background-color: #4d4d4d; }
-  30%  { background-color: #666666; }
-  40%  { background-color: #808080; }
-  50%  { background-color: #999999; }
-  60%  { background-color: #b3b3b3; }
-  70%  { background-color: #cccccc; }
-  80%  { background-color: #e6e6e6; }
-  90%  { background-color: #f2f2f2; }
-  100% { background-color: #ffffff; }  /* White */
+  0%   { background-color: #de2828; }  /* Very dark gray */
+  10%  { background-color: #27b30bb0; }
+  20%  { background-color: #470d62; }
+  30%  { background-color: #9be84e; }
+  40%  { background-color: #c1f006; }
+  50%  { background-color: #c39ae2; }
+  60%  { background-color: #fd08d4; }
+  70%  { background-color: #23a350; }
+  80%  { background-color: #f3ef00; }
+  90%  { background-color: #e22353; }
+  100% { background-color: #2a2c49; }  /* White */
 }
