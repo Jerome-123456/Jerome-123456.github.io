@@ -1,0 +1,37 @@
+body{
+    background-color: #0D1117;
+    animation: Animation_1 1.00s ease infinite;
+    color: #C9D1D9;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+
+}
+header{
+    text-align: center;
+}
+.NavBar {
+    background-color:#1b2431;
+    color: #C9D1D9;
+    overflow: hidden;
+    width: 20px;
+    float: left;
+    height: 100vh;
+    transition: width 0.3s ease;
+}
+.NavBar > a{
+    color:#C9D1D9;;
+    display: none;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    
+}
+.NavBar:hover{
+    width: 100px;
+    
+    
+}
+.NavBar:hover > a{
+    color: #C9D1D9;;
+    display:block;
+    font-size: 	0.9375rem;
+    opacity: 1;
+}
