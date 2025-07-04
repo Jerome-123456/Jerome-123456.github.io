@@ -14,6 +14,9 @@ header{
     overflow: hidden;
     width: 20px;
     float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     transition: width 0.3s ease;
 }
@@ -34,4 +37,30 @@ header{
     display:block;
     font-size: 	0.9375rem;
     opacity: 1;
+}
+.Content{
+    margin-left: 100px;
+   
+}
+.DragBox{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: #fff;
+    animation: Seizure 0.05s infinite;
+    float: left;
+    margin-right: 10px;
+}
+@keyframes Seizure {
+  0%   { background-color: #1a1a1a; }  /* Very dark gray */
+  10%  { background-color: #333333; }
+  20%  { background-color: #4d4d4d; }
+  30%  { background-color: #666666; }
+  40%  { background-color: #808080; }
+  50%  { background-color: #999999; }
+  60%  { background-color: #b3b3b3; }
+  70%  { background-color: #cccccc; }
+  80%  { background-color: #e6e6e6; }
+  90%  { background-color: #f2f2f2; }
+  100% { background-color: #ffffff; }  /* White */
 }

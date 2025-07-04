@@ -24,24 +24,47 @@
             async>
         </script>
 
+        <script>
+            function dragstartHandler(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function dragoverHandler(ev) {
+                ev.preventDefault();
+            }
+
+            function dropHandler(ev) {
+                ev.preventDefault();
+                const data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+
     </head>
     <body>
-        <header>A website</header>
-        <div class="NavBar">
-        </div>
         
+        <div class="NavBar"></div> 
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div class="giscus"></div>
+        <div class="Content">
+            <header>A website</header>
+            
+            <div id="div1" class="DragBox" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+            <div id="div2" class="DragBox" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+
+            <img id="img1" src="Pictures/character.png" draggable="true" ondragstart="dragstartHandler(event)" width="100" height="100">
+
+
+
+
+
+
+
+
+            <div class="giscus"></div>
+
+
+
+
+       </div>
     </body>
 </html>
