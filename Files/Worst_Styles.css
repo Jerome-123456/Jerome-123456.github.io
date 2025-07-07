@@ -1,132 +1,112 @@
-/* ✨ Fonts from multiple dimensions of pain */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Paprika&family=Monofett&family=Cabin+Sketch&family=UnifrakturCook&display=swap');
-
-body {
-  background: repeating-conic-gradient(at 10% 10%, hotpink 10%, cyan 20%, yellow 30%);
-  background-size: 400% 400%;
-  animation: meltdown 0.6s infinite alternate ease-in-out;
-  font-family: 'Comic Neue', 'Paprika', 'Monofett', 'UnifrakturCook', fantasy, cursive, monospace;
-  margin: 50px;
-  overflow: scroll;
-  cursor: none;
-  color: transparent;
-  text-shadow: 2px 2px 2px red, -1px -1px 0 blue;
-  filter: hue-rotate(360deg) invert(1) blur(1px);
-  perspective: 999px;
-  transform: scale(1.1) rotateX(20deg);
+@keyframes insanityBlink {
+  0%, 100% { color: red; }
+  50% { color: yellow; background: purple; }
 }
 
-@keyframes meltdown {
-  0% { background-position: 0 0; }
-  100% { background-position: 100% 100%; }
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif !important;
+  background: repeating-linear-gradient(
+    45deg,
+    #ff00ff,
+    #ff00ff 10px,
+    #00ffff 10px,
+    #00ffff 20px
+  );
+  animation: insanityBlink 1s infinite;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  animation: epileptic 0.07s infinite alternate-reverse;
-  font-size: 6rem;
-  text-shadow: 5px 5px 0 #ff0, -5px -5px 0 #f0f;
-  transform: rotateX(60deg) scale(2.3);
-  font-family: 'UnifrakturCook', cursive;
+  text-shadow: 3px 3px 0 #000;
+  transform: skew(-10deg);
 }
 
-@keyframes epileptic {
-  0% { color: magenta; opacity: 0.1; }
-  50% { color: black; opacity: 0.9; }
-  100% { color: lime; opacity: 0.4; }
+.NavBar {
+  background-color: #ff0066;
+  font-size: 45px;
 }
 
-marquee, blink {
-  display: inline;
-  font-size: 3rem;
-  animation: twisty 0.4s infinite alternate ease-in-out;
-  text-decoration: overline underline wavy red;
+.NavBar a {
+  color: #00ff00;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@keyframes twisty {
-  0% { transform: skewX(0deg) scale(1); }
-  100% { transform: skewX(45deg) scale(1.4); }
+.NavBar a:hover {
+  color: hotpink;
+  font-size: 50px;
 }
 
-a {
-  font-size: 4rem;
-  color: #ff69b4 !important;
-  background: repeating-linear-gradient(-45deg, black, black 2px, white 2px, white 4px);
-  border: 10px dashed red;
-  padding: 40px;
-  animation: pop 0.2s infinite alternate;
-  mix-blend-mode: difference;
-  letter-spacing: 10px;
+.marquee-top {
+  background: black;
+  color: red;
 }
 
-@keyframes pop {
-  0% { transform: scale(1) rotate(0deg); }
-  100% { transform: scale(1.3) rotate(5deg); }
+.blink-text {
+  color: orange;
+  font-size: 60px;
+  animation: insanityBlink 1s infinite;
 }
 
-button {
-  font-size: 3rem;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-  background-size: 400%;
-  color: transparent;
-  border: 12px dotted lime;
-  padding: 30px;
-  animation: wiggle 0.3s infinite alternate;
-  box-shadow: inset 0 0 20px cyan, 0 0 50px magenta;
-  text-shadow: 1px 1px 5px white;
+.marquee-bottom {
+  border: 20px dotted red;
+  color: cyan;
+  transform: rotate(-30deg);
 }
 
-@keyframes wiggle {
-  0% { transform: translateY(0) rotate(-5deg); }
-  100% { transform: translateY(-15px) rotate(5deg); }
+.hero-link {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: blink underline overline;
+  color: lime !important;
+  animation: insanityBlink 2s infinite;
+}
+
+.scream-button {
+  font-size: 40px !important;
+  background: lime !important;
+  border: 12px dashed red !important;
+  box-shadow: 0 0 15px 5px orange !important;
+  animation: insanityBlink 3s infinite;
+  cursor: crosshair !important;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-around;
-  transform: scaleX(2) skewY(20deg);
-  filter: sepia(200%);
+  justify-content: center;
+  margin-top: 60px;
 }
 
-img {
-  width: 250px;
-  height: 250px;
-  border: 15px dotted hotpink;
-  animation: swirl 1s infinite linear;
-  filter: hue-rotate(270deg) contrast(400%);
+.container img {
+  filter: invert(1) hue-rotate(180deg);
+  transform: rotate(45deg) scale(1.2);
+  border: 10px solid yellow;
+  margin: 10px;
 }
 
-@keyframes swirl {
-  0% { transform: rotate(0deg) scale(1); }
-  100% { transform: rotate(720deg) scale(2); }
+.container img:last-child {
+  border: 15px solid magenta;
 }
 
-.NavBar {
-  background-image: url('https://www.transparenttextures.com/patterns/brick-wall-dark.png');
-  color: chartreuse;
-  width: 10px;
-  float: right;
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  border: 5px solid red;
+  box-shadow: 0 0 20px lime;
+}
+
+.hidden-iframe {
+  opacity: 0.05;
   position: fixed;
   top: 0;
-  right: 0;
-  height: 200vh;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 2rem;
-  animation: slidebar 1s infinite alternate ease-in-out;
-}
-
-@keyframes slidebar {
-  0% { width: 10px; }
-  100% { width: 50vw; }
-}
-
-.NavBar > a {
-  display: inline-block;
-  color: gold;
-  font-weight: bolder;
-  transform: rotate(-90deg);
-  font-size: 1.5rem;
-  padding: 10px;
+  left: 0;
+  z-index: 999999;
+  border: none;
 }

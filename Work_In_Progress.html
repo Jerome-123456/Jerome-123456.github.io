@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>💀 ULTIMATE CHAOS 💀</title>
+    <title>💀 MR. THOMPSON'S ULTIMATE HUMILIATION 💀</title>
     <link rel="stylesheet" href="worst_styles.css" />
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/6/65/Face-screaming-in-fear_emoji.png" />
 
     <script>
       function loopAlerts() {
         setInterval(() => {
-          alert("💥 CHAOS MODE ACTIVATED 💥");
-        }, 3000); // faster, more annoying alerts
+          alert("💥 MR. THOMPSON, YOUR TIME IS UP! 💥");
+        }, 2000);
       }
       window.onload = loopAlerts;
     </script>
@@ -19,40 +19,43 @@
 
   <body>
     <center>
-      <div class="NavBar" style="background-color:yellow; font-size: 40px; font-family: comic sans ms;">
-        <a href="#" style="color:red; text-decoration:none; font-weight:bold;">Home</a> |
-        <a href="#" style="color:blue; text-decoration:underline;">Why</a> |
-        <a href="#" style="color:green; text-decoration:line-through;">No</a>
-      </div>
+        <div class="NavBar">
+            <a href="index.html">Home</a> |
+            <a href="Comments.html">Why?</a> |
+            <a href="Drag&Drop.html">No way, Thompson!</a> |
+        </div>
     </center>
 
-    <marquee behavior="alternate" scrollamount="100" direction="right" style="background: pink;">
-      <h1 style="font-size: 90px; color: red; text-shadow: 2px 2px 5px black;">🚨 THE ABSOLUTE WORST PAGE 🚨</h1>
+
+    <marquee behavior="alternate" scrollamount="150" direction="left" class="marquee-top">
+      <h1>💀 MR. THOMPSON: THE EMBARRASSMENT OF THE CENTURY 💀</h1>
     </marquee>
 
-    <blink><h2 style="color: lime;">YOU ASKED FOR THIS</h2></blink>
+    <blink><h2 class="blink-text">YOU BROUGHT THIS ON YOURSELF, MR. THOMPSON!</h2></blink>
 
-    <marquee direction="down" scrollamount="50" width="100%" height="400" style="border: 5px dashed orange;">
-      <h3 style="transform: rotate(45deg);">SPINNING INTO NIGHTMARE</h3>
+    <marquee direction="up" scrollamount="80" width="100%" height="500" class="marquee-bottom">
+      <h3>YOUR NIGHTMARE STARTS NOW, MR. THOMPSON — LOOK AT THAT FACE!</h3>
     </marquee>
 
-    <a href="https://en.wikipedia.org/wiki/Holding_Out_for_a_Hero" target="_blank" style="font-size: 25px; color: purple; font-family: impact;">
-      🎧 I NEED A HERO 🎧
+    <a href="https://en.wikipedia.org/wiki/Holding_Out_for_a_Hero" target="_blank" class="hero-link">
+      🎧 MR. THOMPSON DESPERATELY NEEDS A HERO (NOT HAPPENING) 🎧
     </a>
 
     <br /><br />
-    <button onclick="window.open('https://www.youtube.com/watch?v=OBwS66EBUcY')" style="font-size: 30px; background-color: lime; border: 10px dotted red; animation: blink 1s infinite;">
-      🔊 SCREAM WITH ME 🔊
+    <button onclick="window.open('https://www.youtube.com/watch?v=OBwS66EBUcY')" class="scream-button">
+      🔊 SCREAM WITH ME, MR. THOMPSON! 🔊
     </button>
 
-    <div class="container" style="display:flex; flex-wrap: wrap; gap: 50px; margin-top: 50px;">
-      <img src="https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif" style="width: 150px; height: 150px; transform: rotate(15deg);" />
-      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" style="width: 150px; height: 150px; filter: hue-rotate(90deg);" />
-      <img src="https://media.giphy.com/media/j2vB1aRya1eWbCnYV6/giphy.gif" style="width: 150px; height: 150px; opacity: 0.6;" />
-      <img src="Pictures/p24.png" alt="Uploaded Photo" style="width: 150px; height: 150px; border: 10px solid red;" />
+    <div class="container">
+      <img src="https://media.giphy.com/media/l0HlHFRbmaZtBRhXG/giphy.gif" alt="chaos" />
+      <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="madness" />
+      <img src="https://media.giphy.com/media/j2vB1aRya1eWbCnYV6/giphy.gif" alt="panic" />
+      <!-- This is Mr. Thompson’s “proud” photo -->
+      <img src="Pictures/p24.png" alt="Mr. Thompson's gloriously embarrassing photo" title="The face of failure: Mr. Thompson" />
+      <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" alt="crazy" />
     </div>
 
-    <audio autoplay loop controls style="position: fixed; bottom: 0; right: 0; width: 300px;">
+    <audio autoplay loop controls class="audio-player">
       <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
@@ -61,17 +64,17 @@
       width="1"
       height="1"
       src="https://www.youtube.com/embed/OBwS66EBUcY?autoplay=1&loop=1&playlist=OBwS66EBUcY"
-      frameborder="10"
+      frameborder="20"
       allow="autoplay; encrypted-media"
-      style="opacity: 0.1; position: fixed; top: 0; left: 0;"
+      class="hidden-iframe"
     ></iframe>
 
     <script>
-      // More chaos: flash background color every 500ms
+      // Flash body background color faster and randomly
       setInterval(() => {
-        document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
-      }, 500);
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+        document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+      }, 300);
     </script>
-
   </body>
 </html>
