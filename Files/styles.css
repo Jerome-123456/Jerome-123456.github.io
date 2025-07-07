@@ -51,7 +51,7 @@ header{
     margin-right: 10px;
 }
 
-.picturebox{
+.Content_Box{
     background-color:#1b2431;
     color: #C9D1D9;
     border-radius: 15px;
@@ -67,4 +67,11 @@ header{
     
     
 } 
-
+.Drop_Box{
+    background-color: #C9D1D9;
+    animation: eyeHurtingAnimation 0.2s infinite;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 20px;
+}
