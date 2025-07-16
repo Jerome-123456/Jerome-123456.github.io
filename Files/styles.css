@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 body{
     background-color: #0D1117;
     animation: Animation_1 1.00s ease infinite;
     color: #C9D1D9;
-    font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+    
 
 }
 header{
@@ -55,18 +60,28 @@ header{
     background-color:#1b2431;
     color: #C9D1D9;
     border-radius: 15px;
-    width:fit-content;
+    
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */  
-    display: flex;
-    justify-content: center;  /* center content horizontally */
-    align-items: center;      /* center content vertically */
+   
+
     
     
 } 
+p{
+    font-family: "VT323", monospace;
+    color: #C9D1D9;
+    font-size: 20px;
+}
+h2{
+    font-family: "Press Start 2P", system-ui;
+    color: #C9D1D9;
+}
+header{
+    font-family: "Press Start 2P", system-ui;
+    color: #C9D1D9;
+}
 .Drop_Box{
     background-color: #C9D1D9;
     animation: eyeHurtingAnimation 0.2s infinite;

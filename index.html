@@ -6,6 +6,12 @@
         <title>index.html</title>
         <link rel="stylesheet" href="Files/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
 
          <script>
             function dragstartHandler(ev) {
@@ -33,8 +39,6 @@
         <div class="Content">
             <header>A website</header>
             <section class="Content_Box">
-                <header>A website</header>
-                
                     <p>This is a simple website to demonstrate HTML, CSS, and JavaScript. </p>
                     <p>Feel free to explore the links in the navigation bar. </p>
                     <p>Use the drag and drop feature to move images around.</p>
@@ -42,14 +46,14 @@
 
             <section class="Content_Box">
                     <div>
-                        <h2>Drag & Drop Feature:</h2><br>
-                        <p>Click and hold the image below, then drag it to a new location.</p><br>
+                        <h2>Drag & Drop Feature:</h2>
+                        <p>Click and hold the image below, then drag it to a new location.</p>
 
                         <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" class="Drop_Box" style="float: left;"></div>
                         <div id="div2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" class="Drop_Box" style="float: left;"></div>
                         
                         
-                        <img id="p1" src="Pictures/p1.png" draggable="true" ondragstart="dragstartHandler(event)" width="150px" height="84px"/>
+                        <img id="p1" src="Pictures/p1.png" draggable="true" ondragstart="dragstartHandler(event)" width="150px" height="84px" style="float: left;"/>
                     </div>
 
             </section>
