@@ -7,25 +7,53 @@
         <link rel="stylesheet" href="Files/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
+         <script>
+            function dragstartHandler(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function dragoverHandler(ev) {
+                ev.preventDefault();
+            }
+
+            function dropHandler(ev) {
+                ev.preventDefault();
+                const data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
+
     </head>
     <body>
         
         <div class="NavBar">
             <br><a href="index.html">Home</a>
             <br><a href="Comments.html">Comments</a>
-            <br><a href="Drag%26Drop.html">Drag & Drop</a>
-            <br><a href="Work_In_Progress.html">Work In Progress</a>
-
         </div> 
-        
         <div class="Content">
             <header>A website</header>
             <section class="Content_Box">
-                <p>This is a simple website to demonstrate HTML, CSS, and JavaScript. </p>
-                <p>Feel free to explore the links in the navigation bar. </p>
-                <p>Use the drag and drop feature to move images around.</p>
+                <header>A website</header>
+                
+                    <p>This is a simple website to demonstrate HTML, CSS, and JavaScript. </p>
+                    <p>Feel free to explore the links in the navigation bar. </p>
+                    <p>Use the drag and drop feature to move images around.</p>
             </section>
 
+            <section class="Content_Box">
+                    <div>
+                        <h2>Drag & Drop Feature:</h2><br>
+                        <p>Click and hold the image below, then drag it to a new location.</p><br>
+
+                        <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" class="Drop_Box" style="float: left;"></div>
+                        <div id="div2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" class="Drop_Box" style="float: left;"></div>
+                        
+                        
+                        <img id="p1" src="Pictures/p1.png" draggable="true" ondragstart="dragstartHandler(event)" width="150px" height="84px"/>
+                    </div>
+
+            </section>
+        </div>
        </div>
     </body>
 </html>

@@ -70,8 +70,8 @@ header{
 .Drop_Box{
     background-color: #C9D1D9;
     animation: eyeHurtingAnimation 0.2s infinite;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 84px;
     position: relative;
     margin: 20px;
 }
