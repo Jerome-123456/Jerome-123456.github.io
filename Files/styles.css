@@ -5,13 +5,12 @@
 
 body{
     background-color: #0D1117;
-    animation: Animation_1 1.00s ease infinite;
     color: #C9D1D9;
-    
-
+    font-size: 22px;
 }
 header{
     text-align: center;
+    font-size: 36px;
 }
 .NavBar {
     background-color:#1b2431;
@@ -30,12 +29,9 @@ header{
     display: none;
     transition: opacity 0.3s ease;
     opacity: 0;
-    
 }
 .NavBar:hover{
     width: 100px;
-    
-    
 }
 .NavBar:hover > a{
     color: #C9D1D9;;
@@ -45,7 +41,6 @@ header{
 }
 .Content{
     margin-left: 100px;
-   
 }
 .DragBox{
     width: 100px;
@@ -59,15 +54,10 @@ header{
 .Content_Box{
     background-color:#1b2431;
     color: #C9D1D9;
-    border-radius: 15px;
-    
+    border-radius: 15px;  
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
-   
-
-    
-    
 } 
 p{
     font-family: "VT323", monospace;
@@ -89,4 +79,16 @@ header{
     height: 84px;
     position: relative;
     margin: 20px;
+}
+.giscus {
+    width: 100%;
+    height: 100%;
+    background-color: #1b2431;
+    color: #C9D1D9;
+    border-radius: 15px;
+    padding: 20px;
+    float: left;
+}
+li {
+    font-family: "VT323", monospace;
 }
