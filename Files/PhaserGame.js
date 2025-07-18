@@ -15,7 +15,7 @@ var config = {
 function preload ()
 {
     this.load.image('Background', 'Assets/background 1.png');
-    this.load.spritesheet('Player', 'Assets/player.png', { frameWidth: 50, frameHeight: 50 });
+    this.load.spritesheet('Player', 'Assets/player.png', { frameWidth: 100, frameHeight: 100 });
 }
 
 function create ()
@@ -36,9 +36,6 @@ function update ()
     if(gameState.cursors.left.isDown && gameState.player.x > 0){
         gameState.player.x -= 2;
     }
-    
-    
-
 }
 
 const game = new Phaser.Game(config);
