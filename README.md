@@ -1,1 +1,1 @@
-Html Website because i get borded and nothing else to do
+Basic HTML page with added CSS and Javascript
